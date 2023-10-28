@@ -2,6 +2,8 @@ from turtle import Turtle
 
 STARTING_POSITION = [(0, 0), (-20, 0), (-40, 0)]
 MOVE_DISTANCE = 20
+
+
 class Snake:
 
     def __init__(self):
@@ -15,7 +17,6 @@ class Snake:
             kaa.penup()
             kaa.goto(position)
             self.snake.append(kaa)
-
 
     def move(self):
         # range (start = len(snake) -1, stop = 0, step = -1)
